@@ -3,11 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mi Página Personal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+        }
+
+        h1 {
+            color: #2e8b57;
+            margin-top: 50px;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            max-width: 600px;
+            text-align: center;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1em;
+            background-color: #2e8b57;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #3cb371;
+        }
+    </style>
+    <script>
+        function mostrarMensaje() {
+            alert("¡Bienvenido a mi página!");
+        }
+
+        function cambiarTexto() {
+            document.getElementById("info").innerHTML = "Gracias por visitar mi sitio. ¡Espero que disfrutes el contenido!";
+        }
+    </script>
 </head>
 <body>
-    <h1>
-        Hola, soy Jostyn Alcivar
-    </h1>
+    <h1>Hola, soy Jostyn Alcivar</h1>
+    
+    <p id="info">
+        Estudiante ingenieria de software - 7mo Nivel
+    </p>
+    
+    <button onclick="mostrarMensaje()">Haz clic para un mensaje</button>
+    <button onclick="cambiarTexto()">Cambiar mensaje</button>
 </body>
 </html>
